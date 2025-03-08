@@ -4,7 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://github.com/Crispis723/Proyecto-Happy-paws/blob/main/logo.jpg?raw=true" type="image/x-icon">
     <title>Veterinaria V+Kotiando</title>
+    <style>
+        /* Estilos CSS integrados */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-container {
+            background-color: #8A2BE2; /* Color morado */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .header-container h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li.login {
+            margin-left: auto;
+        }
+
+        .login-form-inline {
+            display: flex;
+            align-items: center;
+        }
+
+        .login-form-inline input {
+            margin: 0 5px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .login-form-inline button {
+            padding: 5px 10px;
+            background-color: #7A1AC9; /* Color morado oscuro */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .about-section, .who-section, .services-section, .contact-section, .logo-section {
+            padding: 20px;
+        }
+
+        .about-section h2, .who-section h2, .services-section h2, .contact-section h2, .logo-section h2 {
+            color: #8A2BE2; /* Color morado */
+        }
+
+        .services-list {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .services-list li {
+            margin: 5px 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin: 10px 0 5px;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #8A2BE2; /* Color morado */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #7A1AC9; /* Color morado oscuro */
+        }
+
+        .footer-container {
+            background-color: #8A2BE2; /* Color morado */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .footer-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer-links li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .footer-links li a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,8 +145,16 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#who">Quiénes Somos</a></li>
                     <li><a href="#services">Servicios</a></li>
                     <li><a href="#contact">Contacto</a></li>
+                    <li class="login">
+                        <form id="login-form" class="login-form-inline">
+                            <input type="text" id="username" name="username" placeholder="Usuario" required>
+                            <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                            <button type="submit">Login</button>
+                        </form>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -24,6 +164,11 @@
         <section id="about" class="about-section">
             <h2>Sobre Nosotros</h2>
             <p>En V+Kotiando, nos dedicamos a brindar el mejor cuidado para tus mascotas. Nuestro equipo de veterinarios está comprometido con la salud y el bienestar de tus amigos peludos.</p>
+        </section>
+
+        <section id="who" class="who-section">
+            <h2>Quiénes Somos</h2>
+            <p>Somos un equipo de veterinarios apasionados por el bienestar de los animales. Con años de experiencia, nos comprometemos a proporcionar el mejor cuidado y atención para tus mascotas.</p>
         </section>
 
         <section id="services" class="services-section">
@@ -52,6 +197,12 @@
                 <button type="submit">Enviar</button>
             </form>
         </section>
+
+        <!-- Imagen de logo -->
+        <section id="logo" class="logo-section">
+            <h2>Nuestro Logo</h2>
+            <img src="https://github.com/Crispis723/Proyecto-Happy-paws/blob/main/logo.jpg?raw=true" alt="Logo de la Veterinaria V+Kotiando">
+        </section>
     </main>
 
     <footer>
@@ -63,5 +214,20 @@
             </ul>
         </div>
     </footer>
+
+    <script>
+        // Obtener datos del formulario de login
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evitar el envío del formulario
+
+            // Obtener los valores de los campos del formulario
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+            // Mostrar los valores en la consola
+            console.log("Usuario: " + username);
+            console.log("Contraseña: " + password);
+        });
+    </script>
 </body>
 </html>
