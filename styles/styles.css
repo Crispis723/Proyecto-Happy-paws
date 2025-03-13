@@ -1,0 +1,108 @@
+/* Colores globales */
+:root {
+    --main-purple: #B98BC9;/*colorcalt*/
+    --dark-purple: #7A1AC9;
+    --light-gray: #FFFFFF;
+    --white: #FFFFFF;
+    --black: #000000;
+    --mouse: #D6A469;
+    --dog: #7FC1D1;
+
+
+    /* Fuentes personalizadas */
+    --fuente-Monserrat: 'Montserrat', sans-serif;
+    --fuente-Krona: 'Krona One', sans-serif;
+}
+
+/* Estilo general */
+body {
+    font-family: var(--fuente-Monserrat);
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-gray);
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+.header {
+    background-color: var(--main-purple);
+    color: var(--white);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header_menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+}
+
+.header_menu_link {
+    font-family: var(--fuente-Monserrat);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.header_menu_link:hover {
+    text-decoration: underline;
+}
+
+/* Presentación */
+.presentacion {
+    padding: 5% 15%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.presentacion__contenido {
+    width: 100%;
+    text-align: center;
+    gap: 20px;
+}
+
+.presentacion__contenido__titulo {
+    font-size: 36px;
+    font-family: var(--fuente-Krona);
+    margin-bottom: 10px;
+}
+
+.titulo-destaque {
+    color: var(--mouse);
+}
+
+.presentacion__contenido__texto {
+    font-size: 24px;
+    font-family: var(--fuente-Monserrat);
+}
+
+.presentacion__imagen {
+    max-width: 300px;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dog);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+.footer_autor {
+    font-family: var(--fuente-Monserrat);
+    font-size: 24px;
+    font-weight: 600;
+    color: #f9f9f9;
+}
