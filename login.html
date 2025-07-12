@@ -3,57 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <title>Inicio de sesión | Happy Paws</title>
-  <link rel="stylesheet" href="styles/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Encabezado -->
   <header class="header">
     <nav>
       <ul class="header_menu">
         <li><a href="index.html" class="header_menu_link">Home</a></li>
         <li><a href="#" class="header_menu_link">Sobre nosotros</a></li>
-        <li><a href="login.html" class="header_menu_link">Inicio de sesión</a></li>
+        <li><a href="login.html" class="header_menu_link">Iniciar sesión</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Contenido principal -->
   <main class="presentacion">
+    <section class="presentacion__formulario">
+      <h1 class="titulo">Inicio de sesión</h1>
 
-    <!-- Formulario de login -->
-    <section class="presentacion__contenido">
-      <h1 class="presentacion__contenido__titulo">Inicio de sesión</h1>
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" placeholder="Ejemplo@correo.com">
+      <small>Introduce tu correo</small>
 
-      <label for="email">Correo electrónico</label><br>
-      <input type="email" id="email" placeholder="Ejemplo@Correo.com"><br>
-      <small>Supporting text</small><br><br>
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" placeholder="********">
+      <small>Introduce tu contraseña</small>
 
-      <label for="password">Contraseña</label><br>
-      <input type="password" id="password" placeholder="********"><br>
-      <small>Supporting text</small><br><br>
+      <button class="btn-primary">Iniciar sesión</button>
 
-      <p><strong>Regístrate</strong></p>
-      <button>Iniciar sesión</button>
-
-      <p>Inicie sesión con</p>
-      <button>Google</button>
-      <button>Twitch</button>
+      <p class="texto-alt">O inicia sesión con:</p>
+      <div class="social-buttons">
+        <button class="btn-google">
+          <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google">
+          Continuar con Google
+        </button>
+        <button class="btn-twitch">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Twitch_Logo.svg" alt="Twitch">
+          Continuar con Twitch
+        </button>
+      </div>
     </section>
 
-    <!-- Logo -->
-    <section class="logo-container">
-      <img src="styles/logo.jpg" alt="Logo Happy Paws" class="presentacion__imagen">
-      <h2 class="presentacion__contenido__titulo titulo-destaque">HAPPY PAWS</h2>
+    <section class="presentacion__logo">
+      <img src="styles/logo.jpg" alt="Logo Happy Paws">
+      <h2 class="logo-titulo">HAPPY PAWS</h2>
     </section>
-
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
-    <p class="footer_autor">Desarrollado por Gaes 4</p>
+    <p>Desarrollado por Gaes 4</p>
   </footer>
-
 </body>
 </html>
