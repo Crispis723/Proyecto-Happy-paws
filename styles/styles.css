@@ -1,17 +1,14 @@
 /* Colores globales */
 :root {
-    --main-purple: #B98BC9;/*colorcalt*/
-    --dark-purple: #7A1AC9;
-    --light-gray: #FFFFFF;
-    --white: #FFFFFF;
-    --black: #000000;
-    --mouse: #D6A469;
-    --dog: #7FC1D1;
-
-
-    /* Fuentes personalizadas */
-    --fuente-Monserrat: 'Montserrat', sans-serif;
-    --fuente-Krona: 'Krona One', sans-serif;
+  --main-purple: #B98BC9;
+  --dark-purple: #7A1AC9;
+  --light-gray: #FFFFFF;
+  --white: #FFFFFF;
+  --black: #000000;
+  --mouse: #D6A469;
+  --dog: #7FC1D1;
+  --fuente-Monserrat: 'Montserrat', sans-serif;
+  --fuente-Krona: 'Krona One', sans-serif;
 }
 
 /* Estilo general */
@@ -33,26 +30,12 @@ body {
     padding: 10px 0;
     text-align: center;
 }
-
-.header_menu {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-    margin: 0;
-}
-
+.header_menu { display: flex; justify-content: center; gap: 20px; list-style: none; margin: 0; }
 .header_menu_link {
-    font-family: var(--fuente-Monserrat);
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--white);
-    text-decoration: none;
+    font-size: 24px; font-weight: 600;
+    color: var(--white); text-decoration: none;
 }
-
-.header_menu_link:hover {
-    text-decoration: underline;
-}
+.header_menu_link:hover { text-decoration: underline; }
 
 /* Presentación */
 .presentacion {
@@ -67,28 +50,97 @@ body {
 .presentacion__contenido {
     width: 100%;
     text-align: center;
+    display: flex; flex-direction: column;
     gap: 20px;
 }
-
 .presentacion__contenido__titulo {
     font-size: 36px;
     font-family: var(--fuente-Krona);
     margin-bottom: 10px;
 }
-
-.titulo-destaque {
-    color: var(--mouse);
-}
-
-.presentacion__contenido__texto {
-    font-size: 24px;
-    font-family: var(--fuente-Monserrat);
-}
-
+.titulo-destaque { color: var(--mouse); }
 .presentacion__imagen {
     max-width: 300px;
     border-radius: 10px;
     margin: 20px auto;
+}
+
+/* Login Formulario */
+.login-form {
+  background-color: var(--white);
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+.login-form label {
+  display: block; margin-top: 16px;
+  font-weight: 600;
+}
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.login-form small {
+  color: #888;
+  font-size: 12px;
+}
+
+/* Botones principales */
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  margin: 24px 0;
+  background: var(--dark-purple);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background: var(--main-purple);
+}
+
+/* Texto alternativo */
+.texto-alt {
+  text-align: center;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+/* Botones sociales */
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.btn-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  background: var(--white);
+  cursor: pointer;
+  font-size: 16px;
+  transition: background .2s, box-shadow .2s;
+}
+.btn-social:hover {
+  background: #f1f1f1;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.btn-google img {
+  width: 20px;
+  height: 20px;
 }
 
 /* Footer */
@@ -99,10 +151,7 @@ body {
     padding: 20px;
     margin-top: auto;
 }
-
 .footer_autor {
-    font-family: var(--fuente-Monserrat);
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 24px; font-weight: 600;
     color: #f9f9f9;
 }
