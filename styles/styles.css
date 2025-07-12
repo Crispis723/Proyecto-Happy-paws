@@ -1,20 +1,219 @@
+/* Colores globales */
+:root {
+  --main-purple: #B98BC9;
+  --dark-purple: #7A1AC9;
+  --light-gray: #FFFFFF;
+  --white: #FFFFFF;
+  --black: #000000;
+  --mouse: #D6A469;
+  --dog: #7FC1D1;
+  --fuente-Monserrat: 'Montserrat', sans-serif;
+  --fuente-Krona: 'Krona One', sans-serif;
+}
+
+/* Reset general */
+* {
+  box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+  font-family: var(--fuente-Monserrat);
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-gray);
+  color: var(--black);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Encabezado */
 .header {
   background-color: var(--main-purple);
   color: var(--white);
   padding: 10px 0;
-  width: 100%;
-  position: relative;
-  z-index: 10;
+  text-align: center;
+}
+.header_menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header_menu_link {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white);
+  text-decoration: none;
+}
+.header_menu_link:hover {
+  text-decoration: underline;
 }
 
-.login-form {
+/* Presentación */
+.presentacion {
+  flex: 1;
+  padding: 5% 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Formulario de login */
+.presentacion__formulario {
   background-color: var(--white);
   padding: 32px;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.05);
   max-width: 400px;
   width: 100%;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
+}
+
+.presentacion__formulario label {
+  display: block;
+  margin-top: 16px;
+  font-weight: 600;
+}
+
+.presentacion__formulario input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.presentacion__formulario small {
+  color: #888;
+  font-size: 12px;
+}
+
+/* Botones */
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  margin: 24px 0;
+  background: var(--dark-purple);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background: var(--main-purple);
+}
+
+/* Texto alternativo */
+.texto-alt {
+  text-align: center;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+/* Botones sociales */
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.btn-google,
+.btn-twitch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  background: var(--white);
+  cursor: pointer;
+  font-size: 16px;
+  transition: background .2s, box-shadow .2s;
+}
+.btn-google img,
+.btn-twitch img {
+  width: 20px;
+  height: 20px;
+}
+.btn-google:hover,
+.btn-twitch:hover {
+  background: #f1f1f1;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Sección del logo */
+.presentacion__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.presentacion__logo img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.logo-titulo {
+  font-family: var(--fuente-Krona);
+  font-size: 24px;
+  color: var(--main-purple);
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dog);
+  color: var(--white);
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}
+.footer p {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+  .presentacion {
+    flex-direction: column;
+    padding: 5% 5%;
+  }
+
+  .header_menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header_menu_link {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn-primary,
+  .btn-google,
+  .btn-twitch {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .logo-titulo {
+    font-size: 20px;
+  }
+
+  .presentacion__formulario,
+  .presentacion__logo {
+    max-width: 100%;
+  }
 }
