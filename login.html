@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Inicio de sesión | Happy Paws</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -12,17 +12,18 @@
       <ul class="header_menu">
         <li><a href="index.html" class="header_menu_link">Home</a></li>
         <li><a href="#" class="header_menu_link">Sobre nosotros</a></li>
-        <li><a href="login.html" class="header_menu_link">Iniciar sesión</a></li>
+        <li><a href="login.html" class="header_menu_link">Inicio de sesión</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="presentacion">
-    <section class="presentacion__formulario">
-      <h1 class="titulo">Inicio de sesión</h1>
+  <main class="presentacion" style="flex-direction: row; justify-content: space-around; align-items: center;">
+    <!-- Formulario de inicio de sesión -->
+    <section class="login-form">
+      <h1 class="presentacion__contenido__titulo">Inicio de sesión</h1>
 
       <label for="email">Correo electrónico</label>
-      <input type="email" id="email" placeholder="Ejemplo@correo.com">
+      <input type="email" id="email" placeholder="Ejemplo@Correo.com">
       <small>Introduce tu correo</small>
 
       <label for="password">Contraseña</label>
@@ -31,27 +32,28 @@
 
       <button class="btn-primary">Iniciar sesión</button>
 
-      <p class="texto-alt">O inicia sesión con:</p>
+      <p class="texto-alt">inicie sesión con</p>
       <div class="social-buttons">
-        <button class="btn-google">
+        <button class="btn-social btn-google">
           <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google">
-          Continuar con Google
+          Google
         </button>
-        <button class="btn-twitch">
+        <button class="btn-social btn-twitch">
           <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Twitch_Logo.svg" alt="Twitch">
-          Continuar con Twitch
+          Twitch
         </button>
       </div>
     </section>
 
+    <!-- Logo -->
     <section class="presentacion__logo">
-      <img src="styles/logo.jpg" alt="Logo Happy Paws">
-      <h2 class="logo-titulo">HAPPY PAWS</h2>
+      <img src="styles/logo.jpg" alt="Logo Happy Paws" class="presentacion__imagen">
+      <h2 class="presentacion__contenido__titulo">HAPPY PAWS</h2>
     </section>
   </main>
 
   <footer class="footer">
-    <p>Desarrollado por Gaes 4</p>
+    <p class="footer_autor">Desarrollado por Gaes 4</p>
   </footer>
 </body>
 </html>
