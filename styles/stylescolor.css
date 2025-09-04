@@ -1,0 +1,24 @@
+:root {
+    --primary-color: #B98BC9;
+     --secondary-color: #7A1AC9;
+    --background-color: #FFFFFF;
+    --text-primary: #000000;
+    --accent-color: #D6A469;
+     --text-secondary:#7FC1D1;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Krona One', sans-serif;
+}
+
