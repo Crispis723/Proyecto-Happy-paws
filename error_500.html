@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Something Went Wrong - Happy Paws</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="styles/stylescolor.css">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Krona+One&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="bg-[var(--background-color)] text-[var(--text-primary)]">
+    <div class="flex flex-col min-h-screen">
+        <header class="bg-white shadow-md">
+            <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <a class="flex items-center gap-2" href="#">
+                    <svg class="h-8 w-8 text-[var(--secondary-color)]" fill="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.64 12.05c-.2.2-.51.2-.71 0l-2.65-2.65-2.65 2.65c-.2.2-.51.2-.71 0s-.2-.51 0-.71l2.65-2.65-2.65-2.65c-.2-.2-.2-.51 0-.71s.51-.2.71 0l2.65 2.65 2.65-2.65c.2-.2.51-.2.71 0s.2.51 0 .71l-2.65 2.65 2.65 2.65c.2.2.2.51 0 .71z">
+                        </path>
+                    </svg>
+                    <span class="font-heading text-xl font-bold text-[var(--text-primary)]">Happy Paws</span>
+                </a>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a class="text-[var(--text-primary)] hover:text-[var(--secondary-color)] transition-colors duration-200"
+                        href="#">Services</a>
+                    <a class="text-[var(--text-primary)] hover:text-[var(--secondary-color)] transition-colors duration-200"
+                        href="#">About Us</a>
+                    <a class="text-white hover:text-[var(--accent-color)] font-medium transition-colors duration-200"
+                        href="contact_us.html">Contact Us</a>
+                    <a class="bg-[var(--secondary-color)] text-white py-2 px-4 rounded-md font-semibold hover:bg-opacity-90 transition-colors duration-200"
+                        href="sign_in.html">Sign <input type="text" name="" id=""></a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-[var(--text-primary)]">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <main class="flex-grow flex items-center justify-center text-center px-4">
+            <div class="max-w-md w-full">
+                <div class="flex justify-center mb-8">
+                    <svg class="h-32 w-32 text-red-500" fill="none" stroke="currentColor" stroke-width="1"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <h1 class="font-heading text-4xl md:text-5xl font-bold text-[var(--text-primary)] mb-4">Something Went
+                    Wrong</h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-8">We're currently fixing the issue. Please try again
+                    later.</p>
+                <a class="inline-block bg-[#7A1AC9] text-white py-3 px-8 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition-colors duration-300"
+                    href="index.html">
+                    Return to Homepage
+                </a>
+            </div>
+        </main>
+        <footer class="bg-gray-100 mt-16 py-8">
+            <div class="container mx-auto text-center text-gray-600">
+                <p>© 2024 Happy Paws Veterinary Clinic. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
