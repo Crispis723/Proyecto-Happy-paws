@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Happy Paws - Contact &amp; Appointments</title>
+    <link rel="stylesheet" href="styles\styles.css">
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Krona+One&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles/stylescolor.css">
+</head>
+
+</head>
+
+<body class="bg-[var(--background-color)] text-[var(--text-primary)]">
+    <div class="min-h-screen">
+        <header class="bg-white shadow-md">
+            <div class="container mx-auto flex items-center justify-between px-6 py-4">
+                <a class="flex items-center gap-3" href="#">
+                    <svg class="h-8 w-8 text-[var(--secondary-color)]" fill="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM17.5 14.25H16.25V11.38C16.25 10.99 15.91 10.62 15.5 10.62C15.09 10.62 14.75 10.99 14.75 11.38V14.25H13.5V9.75H14.75V10.53C15.06 9.99 15.71 9.62 16.38 9.62C17.29 9.62 17.5 10.25 17.5 11.13V14.25ZM9.5 10.75C10.33 10.75 11 10.08 11 9.25C11 8.42 10.33 7.75 9.5 7.75C8.67 7.75 8 8.42 8 9.25C8 10.08 8.67 10.75 9.5 10.75ZM6.5 14.25H7.75V9.75H6.5V14.25ZM11.25 14.25H12.5V9.75H11.25V14.25Z">
+                        </path>
+                    </svg>
+                    <h1 class="font-heading text-xl font-bold text-[var(--text-primary)]">Happy Paws</h1>
+                </a>
+                <nav class="hidden items-center gap-8 md:flex">
+                    <a class="font-medium text-[var(--text-primary)] hover:text-[var(--secondary-color)] transition-colors"
+                        href="#">Home</a>
+                    <a class="font-medium text-[var(--text-primary)] hover:text-[var(--secondary-color)] transition-colors"
+                        href="#">Services</a>
+                    <a class="font-medium text-[var(--text-primary)] hover:text-[var(--secondary-color)] transition-colors"
+                        href="#">About Us</a>
+                    <a class="font-medium text-[var(--text-primary)] hover:text-[var(--secondary-color)] transition-colors"
+                        href="#">Contact</a>
+                </nav>
+                <a class="hidden md:inline-block bg-[var(--secondary-color)] text-white py-2 px-6 rounded-md font-semibold hover:bg-opacity-90 transition-colors duration-200"
+                    href="#appointment-form">
+                    Book Appointment
+                </a>
+                <button class="md:hidden">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2"></path>
+                    </svg>
+                </button>
+            </div>
+        </header>
+        <main class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 gap-16 lg:grid-cols-2">
+                <div class="w-full">
+                    <h2 class="font-heading text-3xl font-bold text-[var(--text-primary)] mb-6">Contact Us</h2>
+                    <p class="text-base leading-relaxed text-[var(--text-primary)] mb-8">
+                        Have a question or need to get in touch? Fill out the form below and we'll get back to you as
+                        soon as possible.
+                    </p>
+                    <form id="contact-form" novalidate="">
+                        <div class="mb-6">
+                            <label class="block text-[var(--text-primary)] text-lg font-medium mb-2"
+                                for="name">Name</label>
+                            <input
+                                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--secondary-color)]"
+                                id="name" name="name" placeholder="Your Name" required="" type="text" />
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-[var(--text-primary)] text-lg font-medium mb-2"
+                                for="email">Email</label>
+                            <input
+                                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--secondary-color)]"
+                                id="email" name="email" placeholder="Your Email" required="" type="email" />
+                            <p class="text-red-500 text-sm mt-1 hidden">Please enter a valid email address.</p>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-[var(--text-primary)] text-lg font-medium mb-2"
+                                for="message">Message</label>
+                            <textarea
+                                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--secondary-color)]"
+                                id="message" name="message" placeholder="Your Message" required="" rows="5"></textarea>
+                        </div>
+                        <button
+                            class="bg-[var(--secondary-color)] text-white py-3 px-6 rounded-md font-semibold hover:bg-opacity-90 transition-colors duration-200 w-full"
+                            type="submit">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <div class="w-full" id="appointment-form">
+                    <h2 class="font-heading text-3xl font-bold text-[var(--text-primary)] mb-6">Book an Appointment</h2>
+                    <p class="text-base leading-relaxed text-[var(--text-primary)] mb-8">
+                        Ready to schedule a visit? Fill out the form below to book an appointment for your furry friend.
+                    </p>
+                    <form id="registration-form" novalidate="">
+                        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                            <div class="mb-6">
+                                <label class="block text-[var(--text-primary)] text-lg font-medium mb-2"
+                                    for="pet-name">Pet's Name</label>
+                                <input
+                                    class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--secondary-color)]"
+                                    id="pet-name" name="pet-name" placeholder="e.g. Buddy" required="" type="text" />
+                            </div>
+                            <div class="mb-6">
+                                <label class="block text-[var(--text-primary)] text-lg font-medium mb-2"
+                                    for="owner-name">Owner's Name</label>
+                                <input
+                                    class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--secondary-color)]"
+                                    id="owner-name" name="owner-name" placeholder="Your Name" required="" type="text" />
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                            <div class="mb-6">
+                                <label class="block text-[var(--text-primary)] text-lg font-medium mb-2"
+                                    for="contact-number">Contact Number</label>
+                                <input
+                                    class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--secondary-color)]"
+                                    id="contact-number" name="contact-number" placeholder="(123) 456-7890" required=""
+                                    type="tel" />
+                            </div>
+                            <div class="mb-6">
+                                <label class="block text-[var(--text-primary)] text-lg font-medium mb-2"
+                                    for="appointment-date">Preferred Date &amp; Time</label>
+                                <input
+                                    class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--secondary-color)]"
+                                    id="appointment-date" name="appointment-date" required="" type="datetime-local" />
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-[var(--text-primary)] text-lg font-medium mb-2" for="pet-type">Pet
+                                Type</label>
+                            <select
+                                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--secondary-color)]"
+                                id="pet-type" name="pet-type" required="">
+                                <option disabled="" selected="" value="">Select Pet Type</option>
+                                <option value="dog">Dog</option>
+                                <option value="cat">Cat</option>
+                                <option value="bird">Bird</option>
+                                <option value="rabbit">Rabbit</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-[var(--text-primary)] text-lg font-medium mb-2"
+                                for="reason">Symptoms / Reason for Visit</label>
+                            <textarea
+                                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--secondary-color)]"
+                                id="reason" name="reason" placeholder="Describe the reason for your visit..."
+                                required="" rows="5"></textarea>
+                        </div>
+                        <button
+                            class="bg-[var(--secondary-color)] text-white py-3 px-6 rounded-md font-semibold hover:bg-opacity-90 transition-colors duration-200 w-full"
+                            type="submit">
+                            Book Appointment
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="bg-gray-100 mt-16 py-8">
+            <div class="container mx-auto text-center text-gray-600">
+                <p>© 2024 Happy Paws Veterinary Clinic. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
