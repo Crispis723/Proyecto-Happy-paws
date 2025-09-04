@@ -27,17 +27,19 @@
                 </a>
                 <div class="hidden md:flex items-center space-x-8">
                     <a class="text-white hover:text-[var(--accent-color)] font-medium transition-colors duration-200"
-                        href="index.html">Home</a>
+                        href="#">Home</a>
+                    <a class="text-white hover:text-[var(--accent-color)] font-medium transition-colors duration-200"
+                        href="login_html">login</a>
                     <a class="text-white hover:text-[var(--accent-color)] font-medium transition-colors duration-200"
                         href="#">Our Services</a>
                     <a class="text-white hover:text-[var(--accent-color)] font-medium transition-colors duration-200"
-                        href="login.html">Our Services</a>
-                    <a class="text-white hover:text-[var(--accent-color)] font-medium transition-colors duration-200"
-                        href="#">About Us</a>
+                        href="sfdsfsfds">About Us</a>
+                    <a href="https://yourwebsite.com/nonexistent-page" id="contactLink">Go to non-existent page</a>
+
                     <a class="text-white hover:text-[var(--accent-color)] font-medium transition-colors duration-200"
                         href="contact_us.html">Contact Us</a>
                     <a class="bg-[var(--secondary-color)] text-white py-2 px-4 rounded-md font-semibold hover:bg-opacity-90 transition-colors duration-200"
-                        href="sign_in.html">Sign <input type="text" name="" id=""></a>
+                        href="#">Book an Appointment</a>
                 </div>
                 <button class="md:hidden text-white">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -46,15 +48,6 @@
                             stroke-width="2"></path>
                     </svg>
                 </button>
-                <div id="errorModal"
-                    class="hidden fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center">
-                    <div class="bg-white p-6 rounded-md text-center">
-                        <h2 class="text-xl font-bold" id="errorTitle">Error</h2>
-                        <p id="errorMessage">An error occurred, please try again later.</p>
-                        <button onclick="closeModal()"
-                            class="bg-[var(--primary-color)] text-white py-2 px-4 rounded-md">Close</button>
-                    </div>
-                </div>
             </nav>
         </header>
         <main class="flex-grow">
@@ -68,7 +61,7 @@
                             compassionate and comprehensive services.</p>
                         <div class="flex space-x-4">
                             <a class="bg-[var(--secondary-color)] text-white py-3 px-6 rounded-md font-semibold hover:bg-opacity-90 transition-colors duration-200"
-                                href="sign_in.html">Sign in</a>
+                                href="#">Book an Appointment</a>
                             <a class="bg-[var(--primary-color)] text-white py-3 px-6 rounded-md font-semibold hover:bg-opacity-90 transition-colors duration-200"
                                 href="#">Learn About Our Services</a>
                         </div>
@@ -194,6 +187,18 @@
             </div>
         </footer>
     </div>
+    <!-- Modal para mostrar los mensajes de error -->
+    <div id="errorModal" class="hidden fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center">
+        <div class="bg-white p-6 rounded-md text-center">
+            <h2 class="text-xl font-bold" id="errorTitle">Error</h2>
+            <p id="errorMessage">An error occurred, please try again later.</p>
+            <button onclick="closeModal()"
+                class="bg-[var(--primary-color)] text-white py-2 px-4 rounded-md">Close</button>
+        </div>
+    </div>
+
+    <!-- Incluir el archivo de JavaScript -->
+    <script src="scripts/errorHandler.js"></script>
 
 </body>
 
