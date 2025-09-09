@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Paws Veterinary Clinic</title>
-    <link rel="stylesheet" href="styles/styles.css"> 
+    <link rel="stylesheet" href="styles/styles.css">
     <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -13,35 +13,33 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;500;600;700&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="styles/stylescolor.css"> 
+    <link rel="stylesheet" href="styles/stylescolor.css">
 </head>
 
 <body class="bg-[var(--background-color)] text-[var(--text-primary)]">
     <div class="flex flex-col min-h-screen">
         <header class="bg-[var(--primary-color)] shadow-md">
-            <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-                <a href="#" class="flex items-center space-x-4">
+            <nav class="container mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center">
+                <a href="#" class="flex items-center space-x-4 mb-4 sm:mb-0">
                     <img src="https://github.com/Crispis723/Proyecto-Happy-paws/blob/index/logo.jpg?raw=true"
                         alt="Happy Paws Logo" class="h-16">
                     <span class="text-white text-2xl font-heading">Happy Paws</span>
                 </a>
-                <div class="hidden md:flex items-center space-x-8">
+                <div class="flex items-center space-x-4 sm:space-x-8 text-sm">
                     <a class="text-white hover:text-[var(--accent-color)] font-medium transition-colors duration-200"
                         href="#">Home</a>
                     <a class="text-white hover:text-[var(--accent-color)] font-medium transition-colors duration-200"
-                        href="login.html">login</a> 
+                        href="login.html">login</a>
                     <a class="text-white hover:text-[var(--accent-color)] font-medium transition-colors duration-200"
                         href="#">Our Services</a>
                     <a class="text-white hover:text-[var(--accent-color)] font-medium transition-colors duration-200"
-                        href="about.html">About Us</a> 
-                    <a href="https://yourwebsite.com/nonexistent-page" id="contactLink">Go to non-existent page</a>
-
+                        href="about.html">About Us</a>
                     <a class="text-white hover:text-[var(--accent-color)] font-medium transition-colors duration-200"
                         href="contact_us.html">Contact Us</a>
                     <a class="bg-[var(--secondary-color)] text-white py-2 px-4 rounded-md font-semibold hover:bg-opacity-90 transition-colors duration-200"
                         href="#">Book an Appointment</a>
                 </div>
-                <button class="md:hidden text-white">
+                <button class="md:hidden text-white hidden">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round"
@@ -153,7 +151,7 @@
                 <div class="flex flex-col md:flex-row justify-between items-center">
                     <div class="mb-6 md:mb-0">
                         <h4 class="font-heading text-lg font-semibold mb-2">Happy Paws Veterinary Clinic</h4>
-                        <p>123 Pet Lane, Animal City, 12345</p> 
+                        <p>123 Pet Lane, Animal City, 12345</p>
                         <p>Phone: (123) 456-7890</p>
                         <p>Hours: Mon-Fri 8am-6pm, Sat 9am-2pm</p>
                     </div>
