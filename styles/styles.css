@@ -1,24 +1,34 @@
-/* Colores globales */
-/* Reset general */
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+}
 
-/* Contenedor principal */
+/* ========================================================================= */
+/* Estilos de Componentes                    */
+/* ========================================================================= */
+
+/* Contenedor principal para formularios y tarjetas */
 .wrapper {
   width: min(420px, 100%);
-  text-align: center;
+  margin: 0 auto;
 }
 
-/* Sección de la marca */
+/* Sección de la marca (logo y nombre) */
 .brand {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 12px;
   margin-bottom: 20px;
-  flex-direction: column;
 }
 
 .brand .logo {
@@ -29,10 +39,10 @@
 .brand .name {
   font-weight: 800;
   font-size: 1.8rem;
-  color: var(--brand); /* Cambié el color al usar la variable */
+  color: var(--brand);
 }
 
-/* Estilo de la tarjeta */
+/* Estilo de la tarjeta (card) */
 .card {
   background: var(--card);
   padding: 32px;
@@ -41,23 +51,23 @@
   text-align: left;
 }
 
-/* Títulos */
+/* Títulos principales en formularios */
 h1 {
   margin: 0 0 20px;
   font-size: 1.5rem;
-  color: var(--brand); /* Cambié el color al usar la variable */
+  color: var(--brand);
   text-align: center;
 }
 
-/* Descripción */
+/* Descripción de formularios */
 p.description {
   font-size: .95rem;
-  color: var(--muted); /* Cambié el color al usar la variable */
+  color: var(--muted);
   text-align: center;
   margin-bottom: 20px;
 }
 
-/* Etiquetas */
+/* Etiquetas de formularios */
 label {
   display: block;
   font-weight: 600;
@@ -81,7 +91,7 @@ input:focus {
   box-shadow: 0 0 0 3px #e6dff5;
 }
 
-/* Botones */
+/* Botones genéricos */
 .btn {
   display: block;
   width: 100%;
@@ -101,18 +111,17 @@ input:focus {
   filter: brightness(0.95);
 }
 
-/* Enlaces */
+/* Contenedor de enlaces en formularios */
 .links {
   text-align: center;
   margin-top: 14px;
 }
 
 .links a {
-  color: var(--brand); /* Cambié el color al usar la variable */
+  color: var(--brand);
   font-size: .95rem;
   text-decoration: none;
 }
 
 .links a:hover {
   text-decoration: underline;
-}
