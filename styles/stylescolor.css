@@ -31,6 +31,9 @@ img {
 
 /* Previene que la página requiera zoom horizontal */
 html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   max-width: 100%;
   overflow-x: hidden;
 }
